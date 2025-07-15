@@ -1,15 +1,6 @@
 import { withTamagui } from "@tamagui/next-plugin";
 import type { NextConfig } from "next";
 
-const boolVals = {
-  true: true,
-  false: false,
-};
-
-const disableExtraction =
-  boolVals[process.env.DISABLE_EXTRACTION as keyof typeof boolVals] ??
-  process.env.NODE_ENV === "development";
-
 const plugins = [
   withTamagui({
     config: "../../packages/ui/src/tamagui.config.ts",
@@ -19,7 +10,7 @@ const plugins = [
     outputCSS:
       process.env.NODE_ENV === "production" ? "./public/tamagui.css" : null,
     logTimings: true,
-    disableExtraction,
+    disableExtraction: process.env.NODE_ENV === "development",
     excludeReactNativeWebExports: [
       "Switch",
       "ProgressBar",
