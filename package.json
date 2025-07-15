@@ -1,5 +1,5 @@
 {
-  "name": "looky-frontend",
+  "name": "looky-interface",
   "private": true,
   "scripts": {
     "build": "turbo run build",
