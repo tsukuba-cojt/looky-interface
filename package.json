@@ -1,0 +1,23 @@
+{
+  "name": "looky-frontend",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "storybook": "turbo run storybook",
+    "build-storybook": "turbo run build-storybook",
+    "check-types": "turbo run check-types",
+    "postinstall": "turbo run build && turbo check-types"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.4",
+    "typescript": "5.8.3"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
