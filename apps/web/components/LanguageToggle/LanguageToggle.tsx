@@ -1,21 +1,17 @@
 "use client";
 
-import { useCallback } from "react";
-
 import { Button, Icons } from "@repo/ui";
-import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
+import { useCallback } from "react";
+import { setLocale } from "../../lib/actions";
 
 export const LanguageToggle = () => {
   const router = useRouter();
   const locale = useLocale();
 
-  const toggleLanguage = useCallback(() => {
-    document.cookie = [
-      `locale=${locale === "en" ? "ja" : "en"}`,
-      "path=/",
-      "max-age=31536000",
-    ].join("; ");
+  const toggleLanguage = useCallback(async () => {
+    await setLocale(locale === "en" ? "ja" : "en");
 
     router.refresh();
   }, [locale, router]);

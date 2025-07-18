@@ -1,7 +1,7 @@
 "use client";
 
 import { Main, YStack } from "@repo/ui";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Header } from "../../components/Header";
 
 interface SiteLayoutProps {

@@ -1,11 +1,11 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { Header as TamaguiHeader, XStack, Anchor } from "@repo/ui";
-import { navConfig } from "../../config/nav";
+import { Anchor, Header as TamaguiHeader, XStack } from "@repo/ui";
 import { usePathname } from "next/navigation";
-import { ModeToggle } from "../ModeToggle";
+import { useTranslations } from "next-intl";
+import { navConfig } from "../../config/nav";
 import { LanguageToggle } from "../LanguageToggle";
+import { ModeToggle } from "../ModeToggle";
 
 export const Header = () => {
   const t = useTranslations();
@@ -28,7 +28,7 @@ export const Header = () => {
 
             return (
               <Anchor
-                key={index}
+                key={index.toString()}
                 href={item.href}
                 fontSize="$sm"
                 fontWeight="$medium"

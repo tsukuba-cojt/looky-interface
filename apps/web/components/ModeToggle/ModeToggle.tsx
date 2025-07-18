@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from "react";
-
 import { Button, Icons } from "@repo/ui";
 import { useRootTheme, useThemeSetting } from "@tamagui/next-theme";
+import { useState } from "react";
 import { useIsomorphicLayoutEffect } from "tamagui";
 
 export const ModeToggle = () => {

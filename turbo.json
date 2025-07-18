@@ -12,9 +12,9 @@
       "dependsOn": ["^build-storybook"],
       "outputs": ["storybook-static/**"]
     },
-    "lint": {
-      "dependsOn": ["^lint"]
-    },
+    "lint": {},
+    "format": {},
+    "check": {},
     "check-types": {
       "dependsOn": ["^check-types"]
     },

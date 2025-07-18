@@ -23,7 +23,7 @@ const config: StorybookConfig = {
   staticDirs: ["../public"],
   viteFinal: (config) => {
     config.define = {
-      DEV: `${process.env.NODE_ENV === "development" ? true : false}`,
+      DEV: `${process.env.NODE_ENV === "development"}`,
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV),
     };
 

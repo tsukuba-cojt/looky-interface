@@ -1,4 +1,4 @@
-import { Sun, Moon, Languages } from "@tamagui/lucide-icons";
+import { Languages, Moon, Sun } from "@tamagui/lucide-icons";
 
 export const Icons = {
   sun: Sun,

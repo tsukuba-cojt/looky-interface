@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, Noto_Sans_JP } from "next/font/google";
-import { NextTamaguiProvider } from "../components/NextTamaguiProvider";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
+import { NextTamaguiProvider } from "../components/NextTamaguiProvider";
 
 const inter = Inter({
   subsets: ["latin"],
