@@ -1,27 +1,38 @@
 {
-  "top": {
-    "metadata": {
-      "title": "トップ"
-    }
-  },
-  "about": {
-    "metadata": {
-      "title": "Lookyについて"
-    }
-  },
-  "faq": {
-    "metadata": {
-      "title": "よくある質問"
-    }
-  },
-  "news": {
-    "metadata": {
-      "title": "お知らせ"
-    }
-  },
-  "contact": {
-    "metadata": {
-      "title": "お問い合わせ"
+  "site": {
+    "top": {
+      "metadata": {
+        "title": "トップ",
+        "description": ""
+      },
+      "tagline": "自分の好みの服を<br></br>簡単に探せるバーチャル試着アプリ",
+      "slogan": "あなたの「ぴったり」<br></br>を見つけよう",
+      "get_started": "はじめる",
+      "about_us": "Lookyとは"
+    },
+    "about": {
+      "metadata": {
+        "title": "Lookyについて",
+        "description": ""
+      }
+    },
+    "faq": {
+      "metadata": {
+        "title": "よくある質問",
+        "description": ""
+      }
+    },
+    "news": {
+      "metadata": {
+        "title": "お知らせ",
+        "description": ""
+      }
+    },
+    "contact": {
+      "metadata": {
+        "title": "お問い合わせ",
+        "description": ""
+      }
     }
   }
 }

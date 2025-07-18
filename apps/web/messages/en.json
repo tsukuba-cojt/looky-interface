@@ -1,27 +1,38 @@
 {
-  "top": {
-    "metadata": {
-      "title": "Top"
-    }
-  },
-  "about": {
-    "metadata": {
-      "title": "About"
-    }
-  },
-  "faq": {
-    "metadata": {
-      "title": "FAQ"
-    }
-  },
-  "news": {
-    "metadata": {
-      "title": "News"
-    }
-  },
-  "contact": {
-    "metadata": {
-      "title": "Contact"
+  "site": {
+    "top": {
+      "metadata": {
+        "title": "Top",
+        "description": ""
+      },
+      "tagline": "A virtual try-on app<br></br>to easily find clothes that match your style",
+      "slogan": "Find your perfect fit<br></br>right here",
+      "get_started": "Get Started",
+      "about_us": "About Looky"
+    },
+    "about": {
+      "metadata": {
+        "title": "About",
+        "description": ""
+      }
+    },
+    "faq": {
+      "metadata": {
+        "title": "FAQ",
+        "description": ""
+      }
+    },
+    "news": {
+      "metadata": {
+        "title": "News",
+        "description": ""
+      }
+    },
+    "contact": {
+      "metadata": {
+        "title": "Contact",
+        "description": ""
+      }
     }
   }
 }

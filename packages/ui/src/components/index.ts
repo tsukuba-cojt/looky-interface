@@ -1,9 +1,11 @@
 export {
   Anchor,
   Footer,
+  H1,
   Header,
   Main,
   Paragraph,
+  Stack,
   TamaguiProvider,
   XStack,
   YStack,

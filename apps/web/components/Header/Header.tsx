@@ -8,7 +8,7 @@ import { LanguageToggle } from "../LanguageToggle";
 import { ModeToggle } from "../ModeToggle";
 
 export const Header = () => {
-  const t = useTranslations();
+  const t = useTranslations("site");
   const pathname = usePathname();
 
   return (

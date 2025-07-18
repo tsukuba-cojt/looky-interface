@@ -19,4 +19,4 @@ export const navConfig = [
     label: "contact",
     href: "/contact",
   },
-];
+] as const
