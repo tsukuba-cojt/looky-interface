@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/nextjs-vite";
-import { NextTamaguiProvider } from "@repo/ui";
+import { NextTamaguiProvider } from "../components/NextTamaguiProvider";
 
 const preview: Preview = {
   parameters: {

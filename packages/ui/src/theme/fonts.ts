@@ -2,7 +2,7 @@ import { createFont, isWeb } from "tamagui";
 
 const systemFont = createFont({
   family: isWeb
-    ? '-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+    ? "var(--font-inter), var(--font-noto-sans-jp), sans-serif"
     : "System",
   size: {
     xs: 10,

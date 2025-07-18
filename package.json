@@ -9,7 +9,7 @@
     "storybook": "turbo run storybook",
     "build-storybook": "turbo run build-storybook",
     "check-types": "turbo run check-types",
-    "postinstall": "turbo run build && turbo check-types"
+    "postinstall": ""
   },
   "devDependencies": {
     "prettier": "^3.6.2",

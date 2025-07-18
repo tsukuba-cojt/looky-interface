@@ -1,5 +1,19 @@
 import type { Metadata } from "next";
-import { NextTamaguiProvider } from "@repo/ui";
+import { Inter, Noto_Sans_JP } from "next/font/google";
+import { NextTamaguiProvider } from "../components/NextTamaguiProvider";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale } from "next-intl/server";
+import { ReactNode } from "react";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const noto_sans_jp = Noto_Sans_JP({
+  subsets: ["latin"],
+  variable: "--font-noto-sans-jp",
+});
 
 export const metadata: Metadata = {
   title: "",
@@ -7,16 +21,23 @@ export const metadata: Metadata = {
   icons: "",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+const RootLayout = async ({ children }: RootLayoutProps) => {
+  const locale = await getLocale();
+
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
-        <NextTamaguiProvider>{children}</NextTamaguiProvider>
+    <html lang={locale} suppressHydrationWarning>
+      <head />
+      <body className={`${inter.variable} ${noto_sans_jp.variable}`}>
+        <NextTamaguiProvider>
+          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        </NextTamaguiProvider>
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;

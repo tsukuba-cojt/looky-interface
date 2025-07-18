@@ -1,7 +1,11 @@
 import { withTamagui } from "@tamagui/next-plugin";
 import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
+
+const withNextIntl = createNextIntlPlugin();
 
 const plugins = [
+  withNextIntl,
   withTamagui({
     config: "../../packages/ui/src/tamagui.config.ts",
     components: ["tamagui", "@repo/ui"],

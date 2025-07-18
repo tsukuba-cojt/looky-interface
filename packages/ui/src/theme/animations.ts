@@ -1,5 +1,4 @@
 import { createAnimations } from "@tamagui/animations-moti";
-import { Easing } from "react-native-reanimated";
 
 export const animations = createAnimations({
   "75ms": {
@@ -44,7 +43,6 @@ export const animations = createAnimations({
   pulse: {
     type: "timing",
     duration: 1000,
-    easing: Easing.bezier(0.4, 0, 0.6, 1),
     loop: true,
     repeatReverse: true,
   },

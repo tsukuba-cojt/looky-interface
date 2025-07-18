@@ -1,0 +1,27 @@
+{
+  "top": {
+    "metadata": {
+      "title": "Top"
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "About"
+    }
+  },
+  "faq": {
+    "metadata": {
+      "title": "FAQ"
+    }
+  },
+  "news": {
+    "metadata": {
+      "title": "News"
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "Contact"
+    }
+  }
+}

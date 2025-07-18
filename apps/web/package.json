@@ -14,13 +14,21 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
+    "@t3-oss/env-nextjs": "^0.13.8",
+    "@tamagui/core": "1.129.5",
     "@tamagui/next-plugin": "1.129.5",
+    "@tamagui/next-theme": "1.129.5",
+    "@tamagui/polyfill-dev": "1.129.5",
+    "google": "link:next/font/google",
     "next": "^15.3.0",
+    "next-intl": "^4.3.4",
+    "next-themes": "^0.4.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-native": "0.79.5",
     "react-native-web": "~0.20.0",
-    "tamagui": "1.129.5"
+    "tamagui": "1.129.5",
+    "zod": "^4.0.5"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

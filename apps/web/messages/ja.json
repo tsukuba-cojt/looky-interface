@@ -1,0 +1,27 @@
+{
+  "top": {
+    "metadata": {
+      "title": "トップ"
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "Lookyについて"
+    }
+  },
+  "faq": {
+    "metadata": {
+      "title": "よくある質問"
+    }
+  },
+  "news": {
+    "metadata": {
+      "title": "お知らせ"
+    }
+  },
+  "contact": {
+    "metadata": {
+      "title": "お問い合わせ"
+    }
+  }
+}
