@@ -9,8 +9,8 @@ const TopPage = () => {
 
   return (
     <YStack flex={1} items="center" pt="$12">
-      <XStack  gap="$12">
-        <YStack pt="$20" gap="$20">
+      <XStack gap="$12">
+        <YStack pt="$20" gap="$16">
           <YStack gap="$6">
             <Paragraph
               fontSize="$2xl"
