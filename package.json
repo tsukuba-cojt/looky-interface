@@ -9,8 +9,7 @@
     "format": "biome format --write",
     "storybook": "turbo run storybook",
     "build-storybook": "turbo run build-storybook",
-    "check-types": "turbo run check-types",
-    "postinstall": ""
+    "check-types": "turbo run check-types"
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
