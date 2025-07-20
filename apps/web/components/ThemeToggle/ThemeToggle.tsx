@@ -5,7 +5,7 @@ import { useRootTheme, useThemeSetting } from "@tamagui/next-theme";
 import { useState } from "react";
 import { useIsomorphicLayoutEffect } from "tamagui";
 
-export const ModeToggle = () => {
+export const ThemeToggle = () => {
   const themeSetting = useThemeSetting();
   const [theme] = useRootTheme();
   const [clientTheme, setClientTheme] = useState<string | undefined>("light");
@@ -19,8 +19,10 @@ export const ModeToggle = () => {
       <Button.Icon>
         {clientTheme === "dark" ? (
           <Icons.sun size="$5" shrink={0} />
-        ) : (
+        ) : clientTheme === "light" ? (
           <Icons.moon size="$4" shrink={0} />
+        ) : (
+          <Icons.monitor size="$4" shrink={0} />
         )}
       </Button.Icon>
     </Button>

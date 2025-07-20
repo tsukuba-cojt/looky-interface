@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { navConfig } from "../../config/nav";
 import { LanguageToggle } from "../LanguageToggle";
-import { ModeToggle } from "../ModeToggle";
+import { ThemeToggle } from "../ThemeToggle";
 
 export const Header = () => {
   const t = useTranslations("site");
@@ -42,7 +42,7 @@ export const Header = () => {
           })}
         </XStack>
         <XStack items="center" gap="$4">
-          <ModeToggle />
+          <ThemeToggle />
           <LanguageToggle />
         </XStack>
       </XStack>
